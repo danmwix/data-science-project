@@ -72,18 +72,3 @@ This will generate data/vgsales_cleaned.csv.
 
 Phase 2 & 3: Analysis
 Open the notebooks in the notebooks/ folder and click Run All.
-
-⚠️ Challenges & Troubleshooting
-Challenge	Cause	Fix
-KeyboardInterrupt / Hanging	OneDrive syncing while creating venv	Delete venv folder and run python -m venv venv again; wait 60s
-ImportError (Matplotlib)	Corrupted install or interrupted pip	Run pip install --upgrade --force-reinstall matplotlib
-FileNotFoundError	Notebook looking in the wrong directory	Ensure the path is ../data/vgsales_cleaned.csv if running inside notebooks/
-Regex Issues	Year column contained floats (2008.0)	Used re.search(r'(\d{4})') to extract only the 4-digit integer
-🎓 Project Highlights (For Presentation)
-Regex: Cleaned non-ASCII characters from game titles (like "Pokémon") and grouped console platforms into Sony, Nintendo, and Microsoft brands.
-
-NumPy: Performed statistical analysis (Mean, Std Dev) on 16,000+ rows.
-
-Pandas: Used Pivot Tables and Heatmaps to explore global sales patterns by genre and region.
-
-Matplotlib: Created bar charts and line plots to visualize sales trends over time.
