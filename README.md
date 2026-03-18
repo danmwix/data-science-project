@@ -88,8 +88,16 @@ You should now see `(venv)` at the beginning of your terminal line.
 
 ### 4️⃣ Install Dependencies
 
+While in the virtual environment, make sure to upgrade the version of pip to its latest version
+
 ```powershell
-pip install pandas numpy matplotlib seaborn notebook
+python.exe -m pip install --upgrade pip
+```
+
+After ensuring that your virtual environment is running the latest version of pip, install the dependencies in the requirements folder
+
+```powershell
+pip install -r requirements.txt
 ```
 
 ---
