@@ -15,6 +15,9 @@ It is developed to meet the requirements of the *Applied Sciences course at Thom
 data/
 │── Contains the original and cleaned datasets
 
+figures/
+│── Contains the images for the plots displayed
+
 scripts/
 │── Python scripts for data cleaning (Regex)
 
