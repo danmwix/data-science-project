@@ -2,7 +2,7 @@
 
 This project analyzes global video game sales trends using **Python**, **NumPy**, **Pandas**, and **Matplotlib**.
 It is developed to meet the requirements of the *Applied Sciences course at Thomas More*. 
-The dataset used was obtained from Kaggle: https://www.kaggle.com/datasets/gregorut/videogamesales
+The dataset used was obtained from Kaggle: https://www.kaggle.com/datasets/gregorut/videogamesales which derived it's game entries from the site https://www.vgchartz.com/gamedb/
 
 ---
 
@@ -122,6 +122,10 @@ If you see yellow warnings under imports like `pandas` or `numpy`, your interpre
 ---
 
 ## 🔍 Running the Project
+
+### Phase 0: VGChartz WebScaper
+
+
 
 ### 📌 Phase 1: Data Cleaning
 
