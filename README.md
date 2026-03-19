@@ -1,11 +1,8 @@
-Here’s a cleaner, well-structured, and professional version of your project documentation:
-
----
-
 # 🎮 Global Video Game Sales Analysis
 
 This project analyzes global video game sales trends using **Python**, **NumPy**, **Pandas**, and **Matplotlib**.
-It is developed to meet the requirements of the *Applied Sciences course at Thomas More*.
+It is developed to meet the requirements of the *Applied Sciences course at Thomas More*. 
+The dataset used was obtained from Kaggle: https://www.kaggle.com/datasets/gregorut/videogamesales
 
 ---
 
