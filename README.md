@@ -125,7 +125,11 @@ If you see yellow warnings under imports like `pandas` or `numpy`, your interpre
 
 ### Phase 0: VGChartz WebScaper
 
+Run the Webscraping script:
 
+```powershell
+python scripts/vgchartz_scraper.py
+```
 
 ### 📌 Phase 1: Data Cleaning
 
@@ -160,4 +164,26 @@ data/vgsales_cleaned.csv
 
 ---
 
+## Additional informaiton
+### The Web Scraper
+
+The Webscraper scrapes through the vgchartz website that contains a database of videogame entries throughout the years
+
+The fields scraped for each title include:
+- Rank
+- Name,
+- Platform
+- Year
+- Genre
+- Publisher
+- Developer
+- Critic_Score 
+- User_Score
+- NA_Sales
+- PAL_Sales
+- JP_Sales
+- Other_Sales
+- Global_Sales
+
+The field `Genre` requires us to go to an individual game's page to retrieve that information
 
