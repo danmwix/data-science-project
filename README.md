@@ -167,11 +167,11 @@ data/vgsales_cleaned.csv
 ## Additional informaiton
 ### The Web Scraper
 
-The Webscraper scrapes through the vgchartz website that contains a database of videogame entries throughout the years
+The Webscraper scrapes through the vgchartz website that contains a database of videogame entries published throughout the years
 
 The fields scraped for each title include:
 - Rank
-- Name,
+- Name
 - Platform
 - Year
 - Genre
@@ -188,7 +188,7 @@ The fields scraped for each title include:
 The field `Genre` requires us to go to an individual game's page to retrieve that information
 
 Future Impovement:
-- Implement a more robus version of asyhnchronous scraping
-- write entries into the csv as you're scraping to prevent losing data during scraping
-- Implement more robust error handling
+- Implement a more robust version of asyhnchronous scraping
+- Write entries into the csv as you're scraping to prevent losing data during scraping
+- Implement a more robust error handling
 
