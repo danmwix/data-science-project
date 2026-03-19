@@ -172,10 +172,13 @@ The Webscraper scrapes through the vgchartz website that contains a database of 
 There are a few function defined in `scripts/vgchartz_scraper.py`
 - `getGenre(url, session, sem, rec)` - This is the async function that goes into each individual game page to retrieve the genre.
 
-The `url` parameter takes the url from the main page (contains the specific url for the individual game)
+The `url` parameter takes the url from the main page (contains the specific url for the individual game).
+
 The `session` parameter takes the opened session from the main() function that would be used to request for the page.
+
 The `sem` parameter takes the semaphore to limit the amount of concurrent supbages being scraped.
-The `rec` parameter takes the current rank index of the game being scraped. _Mainly for debugging purposes in the terminal_
+
+The `rec` parameter takes the current rank index of the game being scraped. _Mainly for debugging purposes in the terminal_.
 
 - `main()` - This is the main body of code.
 
