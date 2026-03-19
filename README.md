@@ -16,7 +16,7 @@ figures/
 │── Contains the images for the plots displayed
 
 scripts/
-│── Python scripts for data cleaning (Regex)
+│── Python scripts for data cleaning (Regex) and Webscraping (BeautifulSoup)
 
 notebooks/
 │── Jupyter Notebooks for NumPy and Pandas analysis
