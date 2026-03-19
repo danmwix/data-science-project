@@ -169,6 +169,33 @@ data/vgsales_cleaned.csv
 
 The Webscraper scrapes through the vgchartz website that contains a database of videogame entries published throughout the years
 
+There are a few function defined in `scripts/vgchartz_scraper.py`
+- `getGenre(url, session, sem, rec)` - This is the async function that goes into each individual game page to retrieve the genre.
+
+The `url` parameter takes the url from the main page (contains the specific url for the individual game)
+The `session` parameter takes the opened session from the main() function that would be used to request for the page.
+The `sem` parameter takes the semaphore to limit the amount of concurrent supbages being scraped.
+The `rec` parameter takes the current rank index of the game being scraped. _Mainly for debugging purposes in the terminal_
+
+- `main()` - This is the main body of code.
+
+This is where the session is started for the aiohttp module.
+The main paramters for scraping such as the total pages and the relevant semaphores for concurrency control are declared in
+
+```python
+   MAXIMUM_CONCURRENT_PAGES = 1
+    MAXIMUM_CONCURRENT_SUBPAGES = 3
+    SEMAPHORE_PAGE = asyncio.Semaphore(MAXIMUM_CONCURRENT_PAGES)
+    SEMAPHORE_SUBPAGE = asyncio.Semaphore(MAXIMUM_CONCURRENT_SUBPAGES)
+```
+
+The desired fields are listed are list variable. _This is going to change in the future_
+
+The  `urlhead` and `urltail` is used to customize the url scraped to play with queries and etc
+
+
+ 
+
 The fields scraped for each title include:
 - Rank
 - Name
@@ -187,8 +214,14 @@ The fields scraped for each title include:
 
 The field `Genre` requires us to go to an individual game's page to retrieve that information
 
+This was the main thing holding our website back, since there was a rate limit to making http requests to the server for each file
+
+
+
 Future Impovement:
 - Implement a more robust version of asyhnchronous scraping
 - Write entries into the csv as you're scraping to prevent losing data during scraping
 - Implement a more robust error handling
+- Streamline the list that stores the date, maybe a dictionary would be better
+
 
