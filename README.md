@@ -187,3 +187,8 @@ The fields scraped for each title include:
 
 The field `Genre` requires us to go to an individual game's page to retrieve that information
 
+Future Impovement:
+- Implement a more robus version of asyhnchronous scraping
+- write entries into the csv as you're scraping to prevent losing data during scraping
+- Implement more robust error handling
+
